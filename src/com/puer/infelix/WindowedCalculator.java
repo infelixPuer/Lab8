@@ -24,7 +24,7 @@ public class WindowedCalculator {
             public void actionPerformed(ActionEvent e) {
                 if (firstNumberTextField.getText().isEmpty() || secondNumberTextField.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(panel, "Please, enter numbers.", "ERROR", JOptionPane.ERROR_MESSAGE);
-                } else if (firstNumberTextField.getText().matches("[0-9]+") && secondNumberTextField.getText().matches("[0-9]+")) {
+                } else if (firstNumberTextField.getText().matches("[0-9.]+") && secondNumberTextField.getText().matches("[0-9.]+")) {
                     float firstNumber = Float.parseFloat(firstNumberTextField.getText());
                     float secondNumber = Float.parseFloat(secondNumberTextField.getText());
                     resultTextField.setText(String.valueOf(firstNumber + secondNumber));
@@ -41,7 +41,7 @@ public class WindowedCalculator {
             public void actionPerformed(ActionEvent e) {
                 if (firstNumberTextField.getText().isEmpty() || secondNumberTextField.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(panel, "Please, enter numbers.", "ERROR", JOptionPane.ERROR_MESSAGE);
-                } else if (firstNumberTextField.getText().matches("[0-9]+") && secondNumberTextField.getText().matches("[0-9]+")) {
+                } else if (firstNumberTextField.getText().matches("[0-9.]+") && secondNumberTextField.getText().matches("[0-9.]+")) {
                     float firstNumber = Float.parseFloat(firstNumberTextField.getText());
                     float secondNumber = Float.parseFloat(secondNumberTextField.getText());
                     resultTextField.setText(String.valueOf(firstNumber - secondNumber));
@@ -58,7 +58,7 @@ public class WindowedCalculator {
             public void actionPerformed(ActionEvent e) {
                 if (firstNumberTextField.getText().isEmpty() || secondNumberTextField.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(panel, "Please, enter numbers.", "ERROR", JOptionPane.ERROR_MESSAGE);
-                } else if (firstNumberTextField.getText().matches("[0-9]+") && secondNumberTextField.getText().matches("[0-9]+")) {
+                } else if (firstNumberTextField.getText().matches("[0-9.]+") && secondNumberTextField.getText().matches("[0-9.]+")) {
                     float firstNumber = Float.parseFloat(firstNumberTextField.getText());
                     float secondNumber = Float.parseFloat(secondNumberTextField.getText());
                     resultTextField.setText(String.valueOf(firstNumber * secondNumber));
@@ -75,7 +75,7 @@ public class WindowedCalculator {
             public void actionPerformed(ActionEvent e) {
                 if (firstNumberTextField.getText().isEmpty() || secondNumberTextField.getText().isEmpty()) {
                     JOptionPane.showMessageDialog(panel, "Please, enter numbers.", "ERROR", JOptionPane.ERROR_MESSAGE);
-                } else if (firstNumberTextField.getText().matches("[0-9]+") && secondNumberTextField.getText().matches("[0-9]+")) {
+                } else if (firstNumberTextField.getText().matches("[0-9.]+") && secondNumberTextField.getText().matches("[0-9.]+")) {
                     float firstNumber = Float.parseFloat(firstNumberTextField.getText());
                     float secondNumber = Float.parseFloat(secondNumberTextField.getText());
                     resultTextField.setText(String.valueOf(firstNumber / secondNumber));
